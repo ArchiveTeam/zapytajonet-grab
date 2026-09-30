@@ -71,7 +71,7 @@ if not WGET_AT:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = '20260929.01'
+VERSION = '20260930.01'
 TRACKER_ID = 'zapytajonet'
 TRACKER_HOST = 'legacy-api.arpa.li'
 MULTI_ITEM_SIZE = 100
@@ -371,7 +371,7 @@ class WgetArgs(object):
             item_type, item_value = item_name.split(':', 1)
             if item_type == 'question':
                 wget_args.extend(['--warc-header', 'zapytajonet-question: '+item_value])
-                wget_args.append('https://zapytaj.onet.pl/Category/000,000/2,'+item_value+',initial.html')
+                wget_args.append('https://zapytaj.onet.pl/Category/000,000/2,'+item_value+',redir.html')
             elif item_type == 'user':
                 wget_args.extend(['--warc-header', 'zapytajonet-user: '+item_value])
                 wget_args.append('https://zapytaj.onet.pl/Profile/user_'+item_value+'.html')
