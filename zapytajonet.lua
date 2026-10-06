@@ -50,6 +50,7 @@ local item_patterns = {
   ["^https?://(zapytaj%.onet%.pl/image/generate%.html%?[^#]+)"] = "media",
   ["^https?://(ocdn%.eu/zapytaj/[^#]+)"] = "media",
   ["^https?://(ocdn%.eu/zapytaj%-transforms/[^#]+)"] = "media",
+  ["^https?://(ocdn%.eu/images/zapytaj/[^#]+)"] = "media",
   ["^https?://(ocdn%.eu/_m[^#]+)"] = "media",
   ["^https?://(avatars%.zapytaj%.com%.pl/[^#]+)"] = "media",
   ["^https?://(images%.zapytaj%.com%.pl/[^#]+)"] = "media",
